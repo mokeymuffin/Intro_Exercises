@@ -4,14 +4,14 @@
 import random
 
 
-students = ["drew", "meg", "olivia", "piril", "luisa", " jaya", "monique" , 
+students = ["drew", "meg", "olivia", "piril", "luisa", "jaya", "monique" , 
 "jen", "shanae", "theresa", "kelsey", "brittany", "samantha", "sammy", 
 "mandy", "angela", "catherine", "thais", "dori"]
 
 #there aren't enough super powers to go around!! please add 7 more super powers 
 #to this list
 supers = ["wonder", "bat", "super", "lightening", "flash", "invisible", "aqua",
-"cat", "hulk", "freeze", "storm", " ", " ", " ", " ", " ", " ", " ", ]
+"cat", "hulk", "freeze", "storm", "awesome", "flying", "mind-reading", "money-making", "fire-breathing", "kung-fu", "super-nice"]
 
 
 #Broken code!!! Can you find and fix  the syntax errors?
@@ -20,19 +20,19 @@ supers = ["wonder", "bat", "super", "lightening", "flash", "invisible", "aqua",
 def super_shuffles(list1, list2): #defining function -- this line works
    
     random.shuffle(list1) #use imported random module to shuffle list1
-    students -- list1  #
+    students = list1  #sets the first list to the variable students
     random.shuffle(list2) #use imported random module to shuffle list1
-    supers = list2 #
+    supers = list2 #sets the second list to the variable supers
 
     secret_identities = [] #set variable to an empty list
-    for person in student: # start for loop for students list
-        for power in suprs: #start start for loop for supers list
+    for person in students: # start for loop for students list
+        for power in supers: #start start for loop for supers list
             secret = supers.pop() #pop last list element & save to variable
             identity = students.pop() #pop last list element in students & save to variable
-            secret_identity = secret + " " + identity #
-            print secretidentity #
-            
-            secret_identities.append((secret_identity)) #append secret_identy variable to to secret identities list
+            secret_identity = secret + " " + identity #takes a random super power, adds a space then adds a random student
+            print secret_identity #prints the super power + student name
+        
+            secret_identities.append(secret_identity) #append secret_identy variable to to secret identities list
     
     return secret_identities 
             
