@@ -83,7 +83,7 @@ end13 = "r"
 print end1 + end2 + end3 + end4 + end5 + end6,
 print end7 + end8 + end9 + en10 + end11 + end12
 
-# what does the â€œ,â€ do to the print output?
+# what does the "," do to the print output?
 #
 # what does the "+" do to the print output?
 #
@@ -104,7 +104,7 @@ print new_string[-1] # what do you thinking this line  will print?
 #=========================================================
 
 
-# Going off script!!!!!!!!!!!!! 
+# Going off script!!!!!!!!!!!
 # Yeah, you want more!
 # We got you covered!
 
